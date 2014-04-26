@@ -1,0 +1,106 @@
+# Link to photo: http://imgsrc.hubblesite.org/hu/db/images/hs-1995-32-c-full_jpg.jpg
+# Threshold for star brightness (r + g + b): 600
+# Algorithm: count_and_location (as follows)
+# 
+# locations_and_brightness = {}
+# xsize, ysize = bwpic.size
+# temp = bwpic.load()
+# count_result = 0
+# for x in range(xsize):
+# for y in range(ysize):
+# 	if temp[x, y] == BLACK:
+# 		count_result += 1
+# 		filled = fill_list(temp, xsize, ysize, x, y)
+# 		#brightest_of_star returns the brightest pixel of the
+# 		#list of coordinates passed to it
+# 		brightest_xy, max_brightness = brightest_of_star(picture, filled)
+# 		locations_and_brightness[brightest_xy] = max_brightness
+# 	return count_result, locations_and_brightness
+# 
+# Time to process image: 0.066999912262
+# Number of stars counted: 82
+# The following columns list the x and y coordinates of the brightest pixel of the star
+# followed by the brightness of the star (r + g + b) in the format as follows:
+# x y brightness
+000 014 694
+000 020 741
+002 286 764
+003 350 764
+005 423 755
+006 364 758
+005 344 646
+011 059 761
+017 391 764
+013 389 616
+016 236 612
+017 059 615
+018 387 620
+030 418 763
+037 447 753
+046 027 763
+047 232 700
+047 277 620
+051 441 762
+048 355 687
+058 403 762
+078 096 765
+069 029 607
+069 102 640
+069 119 613
+075 350 760
+093 205 630
+102 181 601
+110 324 765
+109 006 741
+108 057 610
+118 320 600
+128 350 764
+136 408 736
+137 361 605
+146 000 727
+153 000 624
+173 043 744
+174 388 603
+182 035 762
+193 202 764
+181 257 764
+183 118 764
+187 343 760
+189 364 651
+197 186 600
+229 456 741
+234 300 763
+240 127 762
+239 313 623
+238 372 620
+239 311 610
+243 365 760
+273 323 765
+277 016 765
+281 047 763
+272 315 605
+278 282 654
+279 315 633
+284 337 755
+288 021 615
+291 144 751
+303 147 764
+312 098 761
+309 200 632
+312 150 604
+318 427 761
+330 370 763
+330 106 717
+336 368 658
+349 387 763
+354 143 762
+353 383 604
+361 008 764
+363 211 688
+363 444 607
+368 433 765
+369 007 646
+373 232 702
+380 218 722
+382 071 760
+404 446 608

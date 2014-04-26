@@ -1,0 +1,96 @@
+# Link to photo: http://imgsrc.hubblesite.org/hu/db/images/hs-1993-13-a-large_web.jpg
+# Threshold for star brightness (r + g + b): 600
+# Algorithm: count_and_location (as follows)
+# 
+# locations_and_brightness = {}
+# xsize, ysize = bwpic.size
+# temp = bwpic.load()
+# count_result = 0
+# for x in range(xsize):
+# for y in range(ysize):
+# 	if temp[x, y] == BLACK:
+# 		count_result += 1
+# 		filled = fill_list(temp, xsize, ysize, x, y)
+# 		#brightest_of_star returns the brightest pixel of the
+# 		#list of coordinates passed to it
+# 		brightest_xy, max_brightness = brightest_of_star(picture, filled)
+# 		locations_and_brightness[brightest_xy] = max_brightness
+# 	return count_result, locations_and_brightness
+# 
+# Time to process image: 0.134999990463
+# Number of stars counted: 72
+# The following columns list the x and y coordinates of the brightest pixel of the star
+# followed by the brightness of the star (r + g + b) in the format as follows:
+# x y brightness
+006 452 698
+035 313 763
+045 259 703
+072 394 761
+084 405 727
+101 625 733
+120 301 764
+124 436 735
+135 633 751
+150 252 679
+164 571 760
+174 532 764
+174 301 705
+175 338 759
+175 349 764
+204 454 760
+206 474 758
+214 017 695
+250 365 751
+253 298 763
+255 378 760
+276 146 720
+277 458 656
+285 177 762
+283 661 610
+302 390 760
+312 443 756
+323 401 761
+322 445 757
+337 436 605
+363 474 763
+356 446 660
+373 296 685
+374 437 741
+378 311 762
+391 409 764
+397 281 764
+403 421 749
+409 557 762
+430 440 756
+457 469 755
+455 542 651
+461 337 675
+466 437 754
+468 465 665
+478 350 762
+477 291 661
+482 058 763
+484 185 757
+509 501 764
+517 291 760
+520 432 677
+522 474 633
+525 201 762
+526 607 763
+543 509 759
+542 348 639
+560 401 724
+577 358 761
+583 147 752
+582 220 662
+591 223 761
+593 457 668
+605 307 758
+623 667 757
+645 552 759
+664 626 760
+680 407 762
+696 422 763
+734 266 697
+770 346 762
+796 484 702
