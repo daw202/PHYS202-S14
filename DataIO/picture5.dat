@@ -17,7 +17,7 @@
 # 		locations_and_brightness[brightest_xy] = max_brightness
 # 	return count_result, locations_and_brightness
 # 
-# Time to process image: 0.179000139236
+# Time to process image: 0.178000211716
 # Number of stars counted: 246
 # The following columns list the x and y coordinates of the brightest pixel of the star
 # followed by the brightness of the star (r + g + b) in the format as follows:
