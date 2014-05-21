@@ -2,6 +2,8 @@
 import numpy as np
 
 def trapz(func, x, N=10):
+    '''Calculates an integral using the trapezoidal method
+    of the func from 0 to x, using N steps'''
     a = 0.0
     b = float(x)
     h = (b - a) / N
@@ -12,6 +14,8 @@ def trapz(func, x, N=10):
     return I
 
 def simps(func, x, N=10):
+    '''Calculates an integral using the simpsons method
+    of the func from 0 to x, using N steps'''
     a = 0.0
     b = float(x)
     h = (b - a) / N
